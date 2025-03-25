@@ -1,0 +1,20 @@
+.chart-container {
+  background-color: #fff; /* White background for contrast */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Space inside the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px 0; /* Space between charts and other content */
+  max-width: 100%;
+  overflow: hidden;
+  height: 500px; /* Increase height */
+  width: 100%; /* Full width */
+}
+
+.chart-canvas {
+  width: 100% !important;
+  height: 100% !important; /* Ensure the chart scales properly */
+  display: block; /* Prevent inline styling issues */
+  box-sizing: border-box; /* Include padding and borders */
+  max-height: 100%;
+}

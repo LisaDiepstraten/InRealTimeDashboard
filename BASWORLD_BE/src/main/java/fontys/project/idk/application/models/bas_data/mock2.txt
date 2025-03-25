@@ -1,0 +1,118 @@
+{
+  "event": "bas-user-event",
+  "eventHeaders": {
+    "entity": "userEvent",
+    "entityKey": "123e4567-e89b-12d3-a456-426614174000",
+    "eventMainType": "CREATE",
+    "eventSubType": "newUserEvent",
+    "eventTimeStamp": "2024-09-12T12:34:56Z",
+    "publishedBy": "buttPackage",
+    "policyVersion": "1.0.0"
+  },
+  "eventPayload": {
+    "application": {
+      "name": "SampleApp",
+      "version": "2.5.3",
+      "environment": "production"
+    },
+    "context": {
+      "page": {
+        "title": "Product Page",
+        "designSize": "designSize-lg",
+        "url": "https://www.example.com/product/123",
+        "canonicalUrl": "https://www.example.com/product/123"
+      },
+      "session": {
+        "buttSessionId": "sess-987654321",
+        "vendorClickIds": {
+          "google": "GA-123456",
+          "bing": "BING-789012",
+          "facebook": "FB-345678",
+          "linkedIn": "LI-901234"
+        },
+        "referer": "https://www.google.com",
+        "utmParameters": {
+          "source": "google",
+          "medium": "cpc",
+          "campaign": "summer-sale",
+          "term": "running shoes",
+          "content": "ad-variant-1"
+        }
+      },
+      "client": {
+        "buttClientId": "client-654321",
+        "vendorClientIds": {
+          "googleAnalytics": "GA-654321",
+          "bing": "BING-123456",
+          "facebook": "FB-789012"
+        },
+        "rawUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+        "device": {
+          "type": "desktop",
+          "vendor": "Dell",
+          "model": "XPS 13",
+          "screenWidth": 1920,
+          "screenHeight": 1080
+        },
+        "operatingSystem": {
+          "name": "Windows",
+          "version": "10"
+        },
+        "browser": {
+          "name": "Chrome",
+          "version": "90.0.4430.212",
+          "viewportWidth": 1920,
+          "viewportHeight": 1040,
+          "language": "en-US",
+          "cookiesEnabled": true,
+          "javaScriptEnabled": true,
+          "doNotTrackEnabled": false
+        },
+        "engine": {
+          "name": "WebKit",
+          "version": "537.36"
+        },
+        "geolocation": {
+          "latitude": "37.7749",
+          "longitude": "-122.4194",
+          "country": "USA",
+          "region": "California",
+          "city": "San Francisco"
+        }
+      },
+      "user": {
+        "userId": "user-12345",
+        "userEmailAddress": "user@example.com",
+        "personId": "person-67890",
+        "personEmailAddress": "person@example.com",
+        "companyId": "company-abc123",
+        "companyName": "Example Corp"
+      }
+    },
+    "event": {
+      "eventName": "select_item",
+      "data":{
+        "item_list_id": "asd",
+        "item_list_name": "asd",
+        "item":{
+          "item_id": 12345,
+          "item_name": "Sample Item",
+          "affiliation": "Sample Affiliation",
+          "item_brand": "Sample Brand",
+          "item_category": "Electronics",
+          "item_category2": "Gadgets",
+          "item_list_id": "list123",
+          "item_list_name": "Featured Items",
+          "index": 1,
+          "item_variant": "Black",
+          "price": 299.99,
+          "quantity": 2
+        }
+      },
+      "additionalData": {
+        "interactionType": "click",
+        "interactionValue": "Submit"
+      }
+    }
+  }
+}

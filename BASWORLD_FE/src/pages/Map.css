@@ -1,0 +1,30 @@
+.map-container{
+  border:5px solid black;
+  background-color: #78D5E9;
+}
+
+.map-class path {
+  fill: #F1F1F1;
+  stroke: #000000; /* Black border */
+  stroke-width: 0.1; /* Adjust the thickness of the border */
+}
+
+.map-class path:hover {
+  fill: #F1F1F1;
+}
+
+
+.map-class path:hover {
+  filter: brightness(85%) !important;
+}
+
+.country-text-div{
+  left:50% + 10px;
+}
+
+.country-text{
+  text-align: right;
+  padding:0px;
+  margin:0px;
+}
+

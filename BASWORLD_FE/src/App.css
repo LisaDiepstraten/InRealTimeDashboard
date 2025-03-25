@@ -1,0 +1,22 @@
+/* Keep your existing styles for #root, but consider removing or adjusting max-width */
+#root {
+  /* max-width: 2040px; */
+  width: 90% !important;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    padding: 1em;
+    background-color: #c4ffee;
+    width: 100%; /* This makes the navbar full width */
+    position: fixed; /* Optional: to keep it at the top */
+    top: 0; /* Optional: to position it at the top */
+    left: 0; /* Optional: to ensure it starts from the left */
+    z-index: 1000; /* Optional: to keep it above other content */
+}
+
+/* Other existing styles */
